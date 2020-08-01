@@ -1,0 +1,154 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.l-r{
+    float: left;
+}
+.r-l{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.fflying{
+    font-size: 30px;
+    margin: 0px 60px 0px 0px;
+}
+.fflying label{
+    margin: 0px 40px;
+}
+.fflying input[type=text], select{
+    font-size: 15px;
+    width: 90%;
+    padding: 10px 40px;
+    margin: 10px 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.fdepart{
+    margin: 10px 0px;
+    font-size: 30px;
+}
+.fdepart label{
+    margin: 0px 40px;
+}
+.fdepart input{
+    background-color: #ccc;
+    font-size: 15px;
+    width: 74%;
+    padding: 10px 40px;
+    margin: 10px 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.freturn{
+    margin: 10px 0px;
+    font-size: 30px;
+}
+.freturn label{
+    margin: 0px 40px;
+}
+.freturn input{
+    font-size: 15px;
+    width: 74%;
+    padding: 10px 40px;
+    margin: 10px 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.passenger_adult{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.passenger_adult.l-r label{
+    font-size: 20px;
+    margin: 0px 40px;
+}
+.passenger_adult.l-r{
+    font-size: 15px;
+    width: 5%;
+}
+.passenger_adult.l-r select{
+    font-size: 15px;
+    padding: 10px 5px;
+    margin: 10px 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.passenger_child{
+    margin: 10px 30px;
+    font-size: 20px;
+}
+.passenger_child.l-r label{
+    font-size: 20px;
+    margin: 0px 40px;
+}
+.passenger_child.l-r{
+    font-size: 15px;
+    width: 5%;
+}
+.passenger_child.l-r select{
+    font-size: 15px;
+    padding: 10px 5px;
+    margin: 10px 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.passenger_infant{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.passenger_infant.l-r label{
+    font-size: 20px;
+    margin: 0px 40px;
+}
+.passenger_infant.l-r{
+    font-size: 15px;
+    width: 5%;
+}
+.passenger_infant.l-r select{
+    font-size: 15px;
+    padding: 10px 5px;
+    margin: 10px 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.currency{
+    margin: 10px 15px;
+    font-size: 20px;
+}
+.currency.l-r label{
+    color: red;
+    font-size: 20px;
+    margin: 0px 40px;
+}
+.currency.l-r{
+    font-size: 15px;
+    width: 11%;
+}
+.currency.l-r select{
+    font-size: 15px;
+    padding: 10px 5px;
+    margin: 10px 40px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
