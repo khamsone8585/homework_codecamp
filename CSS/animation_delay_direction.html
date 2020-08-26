@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animation Delay and Direction</title>
+  </head>
+  <style>
+      div.at-container {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      height: 100%;
+    }
+    .at-item-1 {
+      width: 100px;
+      height: 100px;
+      background-color:#ffe672;
+      animation-name: slide-right;
+      animation-duration: 2.2s;
+      animation-timing-function: linear;
+      animation-delay: 0.2s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: none;
+    }
+    @keyframes slide-right {
+      0%{
+        transform: translateX(0);
+        position: absolute;
+        left: 0%;
+      }
+      20%{
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+        position: absolute;
+        left: 16%;
+      }
+      40%{
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+        position: absolute;
+        left: 32%;
+      }
+      60%{
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+        position: absolute;
+        left: 48%;
+      }
+      80%{
+        transform: rotate(180deg);
+        position: absolute;
+        left: 64%;
+      }
+      100%{
+        transform: rotate(220deg);
+        position: absolute;
+        left: 84%;
+      }
+    }
+  </style>
+  <body>
+    <div class='at-container'>
+      <div class='at-item-1'></div>
+      <div class='at-item-2'></div>
+    </div>
+  </body>
+</html>

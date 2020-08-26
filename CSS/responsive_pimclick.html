@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS_Responsive_Web_Pimclick</title>
+    <style>
+      #pimclick-hero {
+        width: 100%;
+      }
+
+      .hero-pic {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .hero-pic img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      .contact-us {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+
+      /*form itself starts here*/
+      .contact-form {
+        width: 80%;
+        height: auto;
+        background-color: white;
+        top: 80%;
+        position: absolute;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .contact-form form {
+        width: 85%;
+      }
+
+      #name,
+      #email {
+        width: 100%;
+        height: 45px;
+        border: solid lightgray 1px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #subject {
+        width: 100%;
+        height: 45px;
+        border: solid lightgray 1px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #message {
+        width: 100%;
+        height: 200px;
+        border: solid lightgray 1px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      label {
+        font-size: 18px;
+        color: rgb(145, 145, 145);
+      }
+
+      .form-two {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+      }
+
+      .subject,
+      .message {
+        margin: 10px;
+      }
+
+      .submit {
+        display: flex;
+        justify-content: center;
+      }
+
+      input[type="submit"] {
+        border: 1px solid lightgray;
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-feature-settings: Heiti SC;
+        width: 200px;
+        height: 55px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: rgb(230, 0, 0);
+        color: white;
+      }
+
+      .background {
+        width: 100%;
+        height: 600px;
+        background-color: rgb(245, 245, 245);
+      }
+
+      /*Responsive*/
+      @media only screen and (max-width: 1440px) {
+        .contact-form {
+          width: 80%;
+          height: auto;
+          background-color: white;
+          top: 80%;
+          position: absolute;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          padding-top: 45px;
+          padding-bottom: 45px;
+        }
+        label {
+          font-size: 18px;
+          color: rgb(145, 145, 145);
+        }
+        .name,
+        .email {
+          width: 100%;
+          height: auto;
+          margin: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .contact-form {
+          width: 75%;
+          height: auto;
+          background-color: white;
+          top: 80%;
+          position: absolute;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          padding-top: 45px;
+          padding-bottom: 45px;
+        }
+        label {
+          font-size: 16px;
+          color: rgb(145, 145, 145);
+        }
+        .name,
+        .email {
+          width: 100%;
+          height: auto;
+          margin: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .contact-form {
+          width: 70%;
+          height: auto;
+          background-color: white;
+          top: 80%;
+          position: absolute;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          padding-top: 45px;
+          padding-bottom: 45px;
+        }
+        label {
+          font-size: 14px;
+          color: rgb(145, 145, 145);
+        }
+        .form-two {
+          display: inline;
+        }
+        .name,
+        .email {
+          width: auto;
+        }
+        input[type="submit"] {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Khamsone SOULIPANYA
+    asoulipanya@gmail.com -->
+    <div class="contact-us">
+      <div class="hero-pic">
+        <img src="img/pimclick_hero_pic.jpg" />
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <div class="form-two">
+            <div class="name">
+              <label for="name">Your name (required)</label><br />
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="email">
+              <label for="email">Your Email (required)</label><br />
+              <input type="email" id="email" name="email" /><br />
+            </div>
+          </div>
+
+          <div class="subject">
+            <label for="subject">Subject</label><br />
+            <input type="text" id="subject" name="subject" /><br />
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label><br />
+            <input type="text" id="message" name="message" /><br />
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="background"></div>
+  </body>
+</html>
+

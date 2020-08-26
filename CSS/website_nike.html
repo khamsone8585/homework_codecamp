@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Flex_web_Nike</title>
+    </head>
+    <style>
+      .section{
+        width: 100%;
+      }
+      .section.topheader{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid lightcyan;
+      }
+      .nav_top_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 95px;
+        border-bottom: 1px solid lightcyan;
+      }
+      .nav_top_left{
+        margin: 0px;
+      }
+      .icon img{
+        width: 100%;
+      }
+      .icon {
+        width: 70px;
+        height: auto;
+        display: flex;
+        border-right: solid 1px lightgray;
+      }
+      .nav_top_right{
+        width: 200px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+      }
+      .support,.cart,.language{
+        display: inline-block;
+      }
+      .help{
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cart {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .language {
+        width: 75px;
+        margin-left: auto;
+        margin-right: 25px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+      .section.middle_topheader{
+      display: flex;
+      width: 100%;
+      height: 70px;
+      border-bottom: solid 1px lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+
+      .nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .logo {
+      width: 130px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo img {
+      width: 50%;
+    }
+    .nav ul {
+      list-style: none;
+      margin-left: auto;
+      margin-right: 70px;
+    }
+
+    li {
+      font-family: 'Times New Roman', Times, serif;
+      display: inline-block;
+      font-size: 16px;
+      color: black;
+      letter-spacing: 1px;
+      margin-right: 35px;
+      text-transform: uppercase;
+    }
+
+    .section.detail {
+    background-color: rgb(240, 240, 240);
+    height: 55px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section.detail p {
+    color: black;
+    margin: 0;
+    display: block;
+  }
+    .search {
+      height: 37px;
+      width: 256px;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .search p {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    .big-trend-promotions {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(img/product_items1.jpg);
+    width: 92%;
+    height: 700px;
+    margin: 0 auto;
+  }
+
+  .trend-now {
+    width: 92%;
+    margin: 0 auto;
+    height: 135px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .trend-now h3 {
+    color: black;
+    font-size: 24px;
+  }
+
+  .product {
+    width: 92%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .product-item {
+    width: calc(33% - 10px);
+    height: 380px;
+    background: black;
+    background-size: cover;
+    background-position: center center;
+  }
+  .description {
+    width: 92%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .product-des {
+    width: calc(33% - 10px);
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .des {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .des h4 {
+    font-weight: 60px;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .product-des h5 {
+    font-size: 20px;
+    font-weight: 60px;
+    color: grey;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+  }
+    </style>
+    <body>
+      <!-- Use 2 week | Khamsone SOULIPANYA -->
+      
+      <div class="section topheader">
+        <div class="nav_top_left">
+            <p>About</p>
+        </div>  
+        <div class="icon">
+          <img src="img/jodanlogo.jpg" alt="logo_bass">
+        </div>
+
+        <div class="nav_top_right">
+          <div class="support">
+            <p>Support</p>
+          </div>
+          <div class="cart">
+            <p>Cart</p>
+          </div>
+          <div class="language">
+            <p>Language</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section middle_topheader">
+        <div class="logo">
+            <img src="img/nikelogo.jpg" alt="logo_nike">
+          </div>
+          <div class="nav">
+            <ul style="list-style-type: none;">
+              <li>New Releases</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>Kids</li>
+              <li>Customise</li>
+              <li>Collections</li>
+              <li>Sales</li>
+            </ul>
+          </div>
+          <div class="search">
+            <p>Search</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section detail">
+        <p>COVID-19: Information About Nike Shop and Sent Please look here</p>
+      </div>
+
+      <div class="big-trend-promotions"></div>
+      
+    <div class="trend-now">
+      <h3>Trend Now</h3>
+    </div>
+    <div class="product">
+      <div class="product-item" style="background-image: url('img/product_items1.jpg');"
+      ></div>
+      <div class="product-item" style="background-image: url('img/product_items2.jpg');"
+      ></div>
+      <div class="product-item" style="background-image: url('img/product_items3.png');"
+      ></div>
+    </div>
+
+    <div class="description">
+      <div class="product-des">
+        <div class="des">
+          <h4>Nike Sportswear</h4>
+          <h4>500,000 thb</h4>
+        </div>
+        <h5></h5>
+      </div>
+      <div class="product-des">
+        <div class="des">
+          <h4>Nike Sportswear</h4>
+          <h4>500,000 thb</h4>
+        </div>
+        <h5></h5>
+      </div>
+      <div class="product-des">
+        <div class="des">
+          <h4>Nike Sportswear</h4>
+          <h4>500,000 thb</h4>
+        </div>
+        <h5></h5>
+      </div>
+    </div>
+    </body>
+  </html>

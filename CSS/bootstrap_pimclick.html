@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>CSS Bootstrap Pimclick</title>
+    
+<style>
+  #pimclick-hero {
+    width: 100%;
+  }
+
+  .hero-pic {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero-pic img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .contact-us {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  /*form itself starts here*/
+  .contact-form {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    top: 80%;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+  }
+
+  .contact-form form {
+    width: 85%;
+  }
+
+  #name,
+  #email {
+    width: 100%;
+    height: 45px;
+    border: solid lightgray 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #subject {
+    width: 100%;
+    height: 45px;
+    border: solid lightgray 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #message {
+    width: 100%;
+    height: 200px;
+    border: solid lightgray 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 18px;
+    color: rgb(145, 145, 145);
+    margin-top: 20px;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  input[type="submit"] {
+    border: 1px solid lightgray;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-feature-settings: Heiti SC;
+    width: 200px;
+    height: 55px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgb(230, 0, 0);
+    color: white;
+  }
+
+  .background {
+    width: 100%;
+    height: 750px;
+    background-color: rgb(245, 245, 245);
+  }
+</style>
+
+  </head>
+  <body>
+    <div class="contact-us">
+      <div class="hero-pic">
+        <img src="img/pimclick_pic.jpg" />
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-6">
+              <div class="name">
+                <label for="name">Your name (required)</label><br />
+                <input type="text" id="name" name="name" />
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6">
+              <div class="email">
+                <label for="email">Your Email (required)</label><br />
+                <input type="email" id="email" name="email" /><br />
+              </div>
+            </div>
+          </div>
+
+          <div class="subject">
+            <label for="subject">Subject</label><br />
+            <input type="text" id="subject" name="subject" /><br />
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label><br />
+            <input type="text" id="message" name="message" /><br />
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="background"></div>
+  </body>
+</html>

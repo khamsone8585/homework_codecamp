@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework_Css</title>
+</head>
+<style>
+        .slide10{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .slide10 label{
+            padding: 5px 5px;
+            margin: 0px 10px;
+            display: inline-block;
+        }
+        .slide10 input[type=text]{
+            font-size: 15px;
+            width: 245px;
+            margin: 0px 20px;
+        }
+        .slide10 .contentform{
+            background-color: rgb(139, 167, 167);
+            font-size: 20px;
+            width: 400px;
+        }
+        .slide10 select{
+            width: 250px;
+            height: 25px;
+        }
+</style>
+<body>
+    <h1>คำสอน สุลิปัญญา <br>asoulipanya@gmail.com</h1>
+    <h2>การบ้าน CSS</h2>
+    <hr>
+    <h1>1. slide 5 (review CSS)</h1>
+
+    <table border="1">
+        <tr>
+            <th>CSS Syntax</th>
+            <th>Selector</th>
+            <th>Combinator</th>
+        </tr> 
+        <tr>
+            <td>Selector,Property,Value</td>
+            <td>Simple selectors (select elements based on name, id, class)<br>
+                Combinator selectors<br>
+                Pseudo-class selectors<br>
+                Pseudo-elements selectors<br>
+                Attribute selectors<br>
+            </td>
+            <td>descendant selector (space)<br>
+                child selector (>)<br>
+                adjacent sibling selector (+)<br>
+                general sibling selector (~)<br>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1>2. Slide 7 (review CSS)</h1>
+    
+    <table border="1">
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+            <th>Value unit</th>
+            <th>Property_ในPrecamp ที่สอน</th>
+        </tr> 
+        <tr>
+            <td>คุณสมบัติคือแอตทริบิวต์สไตล์ของแท็ก HTML ทั้งหมดจะถูกแปลงเป็นคุณสมบัติ CSS</td>
+            <td>ค่าถูกกำหนดให้กับคุณสมบัติ</td>
+            <td>หน่วยที่แตกต่างกันสำหรับการแสดงความยาว<br>
+                width, margin, padding, font-size, etc.
+            </td>
+            <td>Content,border,padding,margin,element</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    
+    <h1>3. Slide 10 สร้างตารางFormข้อมูล</h1>
+    
+    <form class="slide10">
+        <label>Name: </label>
+        <input type="text"><br>
+        <label>Tab Text : </label>
+        <input type="text"><br>
+        <label>URL : </label>
+        http://www.wizehive.com/webform/<input type="text">
+        <div class="contentform">
+            <p>FORM SETUP</p>
+        </div>
+        <label>Form: </label>
+        <select>
+            <option></option>
+            <option></option>
+        </select> &nbsp;<input type="button" value="Edit"><br>
+        <label>Logo : </label>
+        no logo uploaded <input type="button" value="Upload Logo"><br>
+        <label>Template: </label>
+        <select>
+            <option>English</option>
+            <option></option>
+        </select> &nbsp;<input type="button" value="Edit"><br>
+        <label>Review Form: </label>
+        <select>
+            <option>Default</option>
+            <option></option>
+        </select><br>
+        <label>Review Score: </label>
+        <select>
+            <option>rating</option>
+            <option></option>
+        </select> &nbsp;<input type="button" value="Reload Fields"><br>
+        <label>Scoring Type: </label>
+        <select>
+            <option>Average</option>
+            <option></option>
+        </select><br>
+        <label>Max Score: </label>
+        <input type="text" value="4.00"><br>
+    </form>
+    <br>
+    <hr>
+    <h1>4. slide 15 (review CSS)</h1>
+    
+    <table border="1">
+        <tr>
+            <th>Value_Property Display</th>
+            <th>Flex vs Grid แตกต่างกันเช่น</th>
+            <th>justify and align แตกต่างกันเช่น</th>
+        </tr>
+        <tr>
+            <td>Inline; Block; Content; flex; grid; inline-block</td>
+            <td>Flex ใช้เพื่อจัดการ layout 1D ส่วน Grid ใช้เพื่อจัดการ layout 2D</td>
+            <td>Justify ใช้เพื่อจัดการแนวนอน ส่วน align ใช้เพื่อจัดการในเเนวตั้ง</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h1>silde 16 (review CSS)</h1>
+    <table border="1">
+        <tr>
+            <th>Position</th>
+            <th>Z-index</th>
+        </tr>
+        <tr>
+            <td>การจัดรูบแบบหน้าเว็บตำแหน่งต่างๆในหน้าเว็บ<br>
+                มี: Static; relative; fixed; alsolute; sticky
+            </td>
+            <td>เป็นการจัดการ Element ในรูบแบบชั้น layer บนหน้าจอ โดยค่าน้อยสุดจะอยู่หลังสุด ค่ามากสุดจะอยู่ด้านหน้า</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

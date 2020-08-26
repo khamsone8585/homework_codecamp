@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animation 3 shorthand</title>
+    <style>
+      div.at-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.at-item {
+      width: 100px;
+      height: 100px;
+      background-color:#ffe672;
+      animation-name: flip-scale-up-diag-1;
+      animation-duration: 2.2s;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: none;
+    }
+    @keyframes flip-scale-up-diag-1 {
+      0%{
+        
+        transform: scale(1) rotate3d(1,1,0,0deg);
+      }
+      20%{
+        
+        transform: scale(1.5) rotate3d(1,1,0,90deg);
+      }
+      40%{
+        
+        transform: scale(2) rotate3d(1,1,0,90deg);
+      }
+      60%{
+        
+        transform: scale(2.5) rotate3d(1,1,0,90deg);
+      }
+      100%{
+        
+        transform: scale(3.5) rotate3d(1,1,0,180deg);
+      }
+    }
+    </style>
+  </head>
+  
+  <body>
+    <div class='at-container'>
+      <div class='at-item' >
+      </div>
+    </div>
+  </body>
+</html>
